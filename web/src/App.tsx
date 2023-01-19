@@ -1,6 +1,7 @@
+import './styles/global.css'
+
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
-import './App.css'
 import { Habit } from './components/Habit'
 
 function App() {
