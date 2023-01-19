@@ -1,13 +1,17 @@
-import Fastify from "fastify";
+import Fastify from "fastify"
+import { PrismaClient } from '@prisma/client'
 
 const app = Fastify()
+const prisma = new PrismaClient()
 
 /**
  *  Método HTTP: get, post, put, patch, delete
  */
 
-app.get('/hello', () => {
-    return 'Hello world'
+app.get('/hello', async () => {
+    const habits = await prisma.habit.findMany()
+
+    return habits
 })
 
 app.listen({
