@@ -12,6 +12,7 @@
   "dependencies": {
     "@fastify/cors": "^8.2.0",
     "@prisma/client": "^4.9.0",
+    "axios": "^1.2.3",
     "dayjs": "^1.11.7",
     "fastify": "^4.11.0",
     "prisma": "^4.9.0",
